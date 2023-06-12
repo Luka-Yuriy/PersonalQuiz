@@ -312,7 +312,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pAP-0h-XAV">
-                                <rect key="frame" x="16" y="240" width="288" height="88.5"/>
+                                <rect key="frame" x="16" y="235" width="288" height="98"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы -🐙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-zW-9LU">
                                         <rect key="frame" x="69" y="0.0" width="150" height="60"/>
@@ -321,12 +321,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы осьминог!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkz-Ma-JdA">
-                                        <rect key="frame" x="89.5" y="68" width="109" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="16" y="68" width="256" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="pkz-Ma-JdA" firstAttribute="top" secondItem="7Fs-zW-9LU" secondAttribute="bottom" constant="8" symbolic="YES" id="6De-4m-Lnq"/>
+                                    <constraint firstItem="pkz-Ma-JdA" firstAttribute="leading" secondItem="pAP-0h-XAV" secondAttribute="leading" constant="16" id="nsK-vP-bls"/>
+                                    <constraint firstAttribute="trailing" secondItem="pkz-Ma-JdA" secondAttribute="trailing" constant="16" id="tPg-45-hY7"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l2t-Lx-em5"/>

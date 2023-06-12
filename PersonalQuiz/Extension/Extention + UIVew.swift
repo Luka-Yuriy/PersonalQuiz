@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Private Methods
+// MARK: - Extentions ResultViewController
 extension ResultViewController {
     func getResult() {
         var frequencyOfAnimals: [Animal: Int] = [:]

@@ -45,10 +45,8 @@ class QuestionsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let resultVC = segue.destination  as? ResultViewController else { return }
         resultVC.answersChosen = answersChosen
-        
     }
 
-    
     @IBAction func singleButonAnswerPressed(_ sender: UIButton) {
         guard let buttonIndex = singleButtons.firstIndex(of: sender) else { return }
         let answer = currentAnswers[buttonIndex]
@@ -70,30 +68,24 @@ class QuestionsViewController: UIViewController {
         answersChosen.append(currentAnswers[index])
         nextQuestion()
     }
-    
 }
 
-//MARK: Private methods
+//MARK: Extension QuestionsViewController
 extension QuestionsViewController {
     private func updateUI() {
-        // Hide stacks
+
         for stackView in [singleStackView, multipleStackView, rangedStackView] {
             stackView?.isHidden = true
         }
         
-        // Get current question
         let currentQuestion = questions[questionIndex]
         
-        // Set current question for question label
         questionLabel.text = currentQuestion.title
         
-        // Calculate progress
         let totalProgress = Float(questionIndex) / Float(questions.count)
         
-        // Set progress for questionProgressView
         questionProgressView.setProgress(totalProgress, animated: true)
-        
-        // Set navigation title
+    
         title = "Вопрос № \(questionIndex + 1) из \(questions.count)"
         
         showCurrentAnswers(for: currentQuestion.responseType)
@@ -121,15 +113,14 @@ extension QuestionsViewController {
         for (label, answer) in zip(multipleLabels, answers) {
             label.text = answer.title
         }
-        
     }
     
     private func showRangedStackView(with answer: [Answer]) {
         rangedStackView.isHidden.toggle()
-        
         rangedLabels.first?.text = answer.first?.title
         rangedLabels.last?.text = answer.last?.title
     }
+    
     private func nextQuestion() {
         questionIndex += 1
         

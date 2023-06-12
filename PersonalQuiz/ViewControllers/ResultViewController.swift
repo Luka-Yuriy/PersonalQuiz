@@ -14,7 +14,6 @@ class ResultViewController: UIViewController {
     
     var answersChosen: [Answer]!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setHidesBackButton(true, animated: true)
@@ -24,5 +23,4 @@ class ResultViewController: UIViewController {
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         navigationController?.dismiss(animated: true)
     }
-    
 }

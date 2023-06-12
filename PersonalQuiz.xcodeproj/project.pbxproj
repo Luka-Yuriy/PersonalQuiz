@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C049F3782A361A5B00ACFCE9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049F3772A361A5B00ACFCE9 /* ResultViewController.swift */; };
+		C049F3812A373E3400ACFCE9 /* Extention + UIVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049F3802A373E3400ACFCE9 /* Extention + UIVew.swift */; };
 		C05285A82A34617F00B3A564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05285A72A34617F00B3A564 /* AppDelegate.swift */; };
 		C05285AA2A34617F00B3A564 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05285A92A34617F00B3A564 /* SceneDelegate.swift */; };
 		C05285AC2A34617F00B3A564 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05285AB2A34617F00B3A564 /* QuestionsViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		C049F3772A361A5B00ACFCE9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		C049F3802A373E3400ACFCE9 /* Extention + UIVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention + UIVew.swift"; sourceTree = "<group>"; };
 		C05285A42A34617F00B3A564 /* PersonalQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05285A72A34617F00B3A564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C05285A92A34617F00B3A564 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C049F37D2A373D3700ACFCE9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C049F3802A373E3400ACFCE9 /* Extention + UIVew.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C052859B2A34617F00B3A564 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 			children = (
 				C05285BC2A34776E00B3A564 /* ViewControllers */,
 				C05285BF2A3477ED00B3A564 /* Models */,
+				C049F37D2A373D3700ACFCE9 /* Extension */,
 				C05285BD2A3477A400B3A564 /* StoryBords */,
 				C05285BB2A34772D00B3A564 /* App */,
 				C05285BE2A3477B600B3A564 /* Resources */,
@@ -189,6 +200,7 @@
 				C049F3782A361A5B00ACFCE9 /* ResultViewController.swift in Sources */,
 				C05285A82A34617F00B3A564 /* AppDelegate.swift in Sources */,
 				C05285AA2A34617F00B3A564 /* SceneDelegate.swift in Sources */,
+				C049F3812A373E3400ACFCE9 /* Extention + UIVew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

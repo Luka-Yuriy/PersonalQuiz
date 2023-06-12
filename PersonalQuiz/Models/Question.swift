@@ -26,7 +26,7 @@ struct Question {
                 title: "Что вам нравится больше?",
                 responseType: .multiple,
                 answers: [
-                    Answer(title: "Павать", animal: .dog),
+                    Answer(title: "Плавать", animal: .dog),
                     Answer(title: "Спать", animal: .cat),
                     Answer(title: "Обнимать", animal: .rabbit),
                     Answer(title: "Есть", animal: .turtle)

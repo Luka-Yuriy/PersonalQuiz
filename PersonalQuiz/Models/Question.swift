@@ -45,6 +45,7 @@ struct Question {
         ]
     }
 }
+
 enum ResponseType {
     case single
     case multiple
